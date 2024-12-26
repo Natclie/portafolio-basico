@@ -53,12 +53,32 @@ main {
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.432);
 }
+@media screen  and (max-width: 660px) {
+    .main-container{
+        width: auto;
+        height: 400px;
+    }
+    .main-items i{
+        transform: scale(1.1);
+    }
+    .main-text h1{
+        font-size: 1.2rem;
+    }
+    .main-text span{
+        font-size: 1rem;
+    }
+    .cv-btn-div{
+        margin: 15px;
+    }
+}
 .main-text h1{
     margin: 8px;
+    font-size: 1.5rem;
 }
 .main-text span{
     font-weight: 300;
     margin: 8px;
+    font-size: 1.3rem;
 }
 .main-container img{
     width: 130px;
@@ -96,4 +116,22 @@ main {
 }
 .main-items i:hover{
     transform: translateY(-5px) scale(1.5);
+}
+.cv-btn-div{
+    margin: 15px;
+}
+.cv-btn{
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    text-align: center;
+    transition: 0.2s;
+    display: inline-block;
+}
+.cv-btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.295);
 }
